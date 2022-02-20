@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.board {
+  display: flex;
+}
+
 .list {
   width: 10rem;
   display: flex;

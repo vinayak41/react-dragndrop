@@ -1,64 +1,53 @@
 export default [
   {
-    id: "1",
-    index: 0,
+    id: "list1",
     title: "first list",
     cards: [
       {
-        index: 0,
-        id: "1",
+        id: "card1",
         title: "first card dsfdfsdfsdfffffffffffffffddddd",
       },
       {
-        index: 1,
-        id: "2",
+        id: "card2",
         title:
           "second card sfddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
       },
     ],
   },
   {
-    id: "3",
-    index: 2,
-    title: "third list",
-    cards: [
-      {
-        index: 0,
-        id: "6",
-        title: "sixth card",
-      },
-      {
-        index: 1,
-        id: "7",
-        title: "seventh card sdfsfdsfdsfssssssssssssss",
-      },
-      {
-        index: 2,
-        id: "8",
-        title: "eighth card dffdsdfdffdsfsdf",
-      },
-    ],
-  },
-  {
-    id: "2",
-    index: 1,
+    id: "list2",
     title: "second list",
     cards: [
       {
-        index: 0,
-        id: "3",
+        id: "card3",
         title:
           "third card sfs dfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       },
       {
-        index: 1,
-        id: "4",
+        id: "card4",
         title: "fourth card sfdsfds",
       },
       {
-        index: 2,
-        id: "5",
+        id: "card5",
         title: "fifth card sdfsddddddddddddddddddddd",
+      },
+    ],
+  },
+  {
+    id: "list3",
+    title: "third list",
+    cards: [
+      {
+        id: "card6",
+        title: "sixth card",
+      },
+      {
+        id: "card7",
+        title: "seventh card sdfsfdsfdsfssssssssssssss",
+      },
+      {
+        id: "card8",
+        title: "eighth card dffdsdfdffdsfsdf",
       },
     ],
   },

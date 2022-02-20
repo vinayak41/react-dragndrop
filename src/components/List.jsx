@@ -1,26 +1,24 @@
 import React from "react";
-import { Droppable } from "react-beautiful-dnd";
-import Card from "./Card";
+import { Draggable } from "react-beautiful-dnd";
+import CardsContainer from "./CardsContainer";
 
-const List = ({ list }) => {
+const List = ({ list, index }) => {
   return (
-    <Droppable droppableId={list.id}>
+    <Draggable draggableId={list.id} index={index}>
       {(provided) => {
         return (
           <div
             className="list"
-            {...provided.droppableProps}
+            {...provided.dragHandleProps}
+            {...provided.draggableProps}
             ref={provided.innerRef}
           >
             {list.title}
-            {list.cards.map((card, index) => (
-              <Card key={card.id} card={card} index={index} />
-            ))}
-            {provided.placeholder}
+            <CardsContainer cards={list.cards} listId={list.id} />
           </div>
         );
       }}
-    </Droppable>
+    </Draggable>
   );
 };
 
